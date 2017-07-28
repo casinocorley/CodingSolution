@@ -13,13 +13,13 @@ namespace CodingSolution
         {
 
             // Exercise 1: Get Triangle Coordinates
-            var triangles = Build
+            var triangles = GridBuilder
                 .Grid()
                 .HasWidth(10)
                 .WithColumns(6)
                 .WithRows(6)
                 .Build()
-                .ToTriangle();
+                .ToTriangles();
 
             // Exercise 2: Get row and column number of a triangle
             var rowNumber = triangles[10].GetRowNumber();

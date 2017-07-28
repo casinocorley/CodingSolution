@@ -14,7 +14,7 @@ namespace CodingSolution.Domain
 
     public static class TriangeExtensions
     {
-        public static IList<Triangle> ToTriangle(this Square square)
+        public static IList<Triangle> ToTriangles(this Square square)
         {
             return new[] {
                 new Triangle(square.TopLeft, square.BottomRight, square.BottomLeft),
@@ -23,12 +23,12 @@ namespace CodingSolution.Domain
 
         }
 
-        public static IList<Triangle> ToTriangle(this IList<Square> squares)
+        public static IList<Triangle> ToTriangles(this IList<Square> squares)
         {
             var triangles = new List<Triangle>();
             foreach(var square in squares)
             {
-                triangles.AddRange(square.ToTriangle());
+                triangles.AddRange(square.ToTriangles());
             }
 
             return triangles;

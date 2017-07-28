@@ -43,7 +43,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Domain\Build.cs" />
     <Compile Include="Domain\GridBuilder.cs" />
     <Compile Include="Domain\Point.cs" />
     <Compile Include="Domain\Square.cs" />

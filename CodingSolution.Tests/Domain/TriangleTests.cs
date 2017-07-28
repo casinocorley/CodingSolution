@@ -13,7 +13,7 @@ namespace CodingSolution.Tests.Domain
             var square = new Square(new Point(0,0), 10);
 
             // Act
-            var triangles = square.ToTriangle();
+            var triangles = square.ToTriangles();
 
             // Assert
             Assert.IsTrue(triangles.Count == 2);
@@ -40,7 +40,7 @@ namespace CodingSolution.Tests.Domain
             };
 
             // Act
-            var triangles = squares.ToTriangle();
+            var triangles = squares.ToTriangles();
 
             // Assert
             Assert.IsTrue(triangles.Count == 8);

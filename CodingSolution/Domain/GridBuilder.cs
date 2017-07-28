@@ -10,6 +10,10 @@ namespace CodingSolution.Domain
         int ColumnLength { get; set; } = 1;
         int RowLength { get; set; } = 1;
 
+        public static GridBuilder Grid()
+        {
+            return new GridBuilder();
+        }
 
         public GridBuilder StartsAt(Point startingPoint)
         {
